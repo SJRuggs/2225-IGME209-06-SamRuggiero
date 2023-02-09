@@ -1,0 +1,2 @@
+		i	20	int
+		numberOfRandoms	20	int
