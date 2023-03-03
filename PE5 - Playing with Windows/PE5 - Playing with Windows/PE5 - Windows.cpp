@@ -1,14 +1,16 @@
+
+#include <iostream>
 #define SFML_STATIC
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
-using namespace std;
+using namespace sf;
 
 int main() 
 {
 	// create window
 	sf::RenderWindow window(sf::VideoMode(750, 350), "My window");
-
+	
 	sf::CircleShape triangle(80.f, 3);
 	sf::CircleShape square(80.f, 4);
 	sf::CircleShape pentagon(80.f, 5);
@@ -18,7 +20,7 @@ int main()
 	triangle.setPosition(100, 100);
 	square.setPosition(300, 100);
 	pentagon.setPosition(500, 100);
-
+	
 	// run while window is open
 	while (window.isOpen()) 
 	{
@@ -31,15 +33,15 @@ int main()
 				window.close();
 			}
 		}
-
+	
 		// clear window
 		window.clear(sf::Color::Black);
-
+	
 		// draw
 		window.draw(triangle);
 		window.draw(square);
 		window.draw(pentagon);
-
+	
 		// end frame
 		window.display();
 	}
