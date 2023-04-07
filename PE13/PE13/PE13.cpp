@@ -1,5 +1,5 @@
 #include <iostream>
-#include "methods.h";
+#include "methods.h"
 
 int main()
 {
